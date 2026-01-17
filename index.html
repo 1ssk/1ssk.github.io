@@ -1,215 +1,189 @@
-<!DOCTYPE html> // нужно переделать
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-  <title>Annonyx</title>
-  <meta charset="utf-8">
-  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <link rel="stylesheet" href="assets/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anyx - Быстрое и стабильное подключение</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<div class="device-notification">
-  <a class="device-notification--logo" href="#0">
-    <img src="assets/img/logo.png" alt="Global">
-    <p>Annonyx</p>
-  </a>
-  <p class="device-notification--message">У нас адаптирован сайт под ваше устройство!</p>
-</div>
-
-<div class="perspective effect-rotate-left">
-  <div class="container"><div class="outer-nav--return"></div>
-    <div id="viewport" class="l-viewport">
-      <div class="l-wrapper">
-        <header class="header">
-          <a class="header--logo" href="#0">
-            <img src="assets/img/logo.svg" alt="Global">
-            <p>Annonyx</p>
-          </a>
-          <button class="header--cta cta">Свяжитесь с нами!</button>
-          <div class="header--nav-toggle">
-            <span></span>
-          </div>
-        </header>
-        <nav class="l-side-nav">
-          <ul class="side-nav">
-            <li class="is-active"><span>О нас</span></li>
-            <li><span>Услуги</span></li>
-            <li><span>Проекты</span></li>
-            <li><span>Контакты</span></li>
-          </ul>
-        </nav>
-        <ul class="l-main-content main-content">
-          <li class="l-section section section--is-active">
-            <div class="intro">
-              <div class="intro--banner">
-                <h1>Ваш вход<br> в пучину <br> интернета</br></h1>
-                <button class="cta">Свяжитесь с нами
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                  <span class="btn-background"></span>
-                </button>
-                <img src="assets/img/introduction-visual.png" alt="Welcome">
-              </div>
-              <div class="intro--options">
-                <a href="#0">
-                  <h3>Белов Захар Александрович</h3>
-                  <p>Python backend developer; <br> Linux system administator</p>
-                </a>
-                <a href="#0">
-                  <h3>Гамов Константин Анатольевич</h3>
-                  <p>Fullstack developer</p>
-                </a>
-                </a>
-              </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Космический фон с градиентами -->
+        <div class="hero-bg">
+            <!-- Анимированные орбиты -->
+            <div class="orbits-container">
+                <div class="orbit orbit-1"></div>
+                <div class="orbit orbit-2"></div>
+                <div class="orbit orbit-3"></div>
             </div>
-          </li>
-          <li class="l-section section">
-            <div class="work">
-              <h2>Услуги</h2>
-              <div class="work--lockup">
-                <ul class="slider">
-                  <li class="slider--item slider--item-left">
-                    <a href="#0">
-                      <p class="slider--item-title">Лендинги под ключ</p>
-                      <p class="slider--item-description">Создание одностраничных сайтов для увеличения продаж и лидов</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-center">
-                    <a href="#0">
-                      <p class="slider--item-title">Собственный VPN</p>
-                      <p class="slider--item-description">Высокоскоростной доступ к серверам в Германии и Финляндии. Скорость до 1 Гбит/с для стриминга, игр и безопасного серфинга.</p>
-                    </a>
-                  </li>
-                  <li class="slider--item slider--item-right">
-                    <a href="#0">
-                      <p class="slider--item-title">Telegram-боты для бизнеса</p>
-                      <p class="slider--item-description">Создадим бота, который будет работать на вас 24/7: консультировать, принимать заказы и собирать заявки.</p>
-                    </a>
-                  </li>
-                </ul>
-                <div class="slider--prev">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                  viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
-                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
-                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z"/>
-                  </g>
-                  </svg>
-                </div>
-                <div class="slider--next">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
-                  <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
-                    <path d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z"/>
-                  </g>
-                  </svg>
-                </div>
-              </div>
+            
+            <!-- Светящиеся точки -->
+            <div class="stars-container">
+                <div class="star star-1"></div>
+                <div class="star star-2"></div>
+                <div class="star star-3"></div>
+                <div class="star star-4"></div>
             </div>
-          </li>
-          <li class="l-section section">
-            <div class="about">
-              <div class="about--banner">
-                <h2>Наши <br> проекты</h2>
-                  <span>
-                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118" style="enable-background:new 0 0 150 118;" xml:space="preserve">
+
+            <!-- Радиальный градиент в центре -->
+            <div class="radial-gradient"></div>
+        </div>
+
+        <!-- Контент -->
+        <div class="hero-content">
+            <!-- Главный заголовок -->
+            <h1 class="hero-title">
+                <span class="hero-title-line">Быстрое и стабильное</span>
+                <span class="hero-title-line">подключение</span>
+            </h1>
+
+            <!-- Подзаголовок -->
+            <p class="hero-subtitle">
+                Современное сетевое решение для повседневного использования
+            </p>
+
+            <!-- Блок с ценой -->
+            <div class="price-container">
+                <div class="price-box">
+                    <span class="price-amount">150 ₽</span>
+                    <span class="price-period">в месяц</span>
+                </div>
+            </div>
+
+            <!-- Кнопка -->
+            <div class="cta-container">
+                <button class="cta-button" onclick="handleConnect()">
+                    <span class="cta-text">Подключиться сейчас</span>
+                    <svg class="cta-arrow" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
                     </svg>
-                  </span>
-                </a>
-                <img src="assets/img/about-visual.png" alt="About Us">
-                
-              </div>
-              <div class="about--options">
-                <a href="https://t.me/annonyx_bot">
-                  <h3>Annonyx VPN</h3>
-                </a>
-                <a href="#0">
-                  <h3>Onbording system</h3>
-                </a>
-                <a href="#0">
-                  <h3>Telegram bots</h3>
-                </a>
-              </div>
-            </div>
-          </li>
+                    <div class="cta-glow"></div>
+                </button>
 
-          <li class="l-section section">
-            <div class="hire">
-              <h2>Выберите услуги и отправьте запрос</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
-                <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Телеграмм боты для автоматизации
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Разработка сайтов лендингов
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Доступ к сетевым ресурсам EU
-                    </label>
-                  </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Ваше имя</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Ваша почта</label>
-                  </div>
-                </div>
-                <input type="submit" value="Отправить запрос">
-              </form>
+                <!-- Подпись под кнопкой -->
+                <p class="cta-info">
+                    Переход в Telegram-бот <span class="telegram-handle">@annonyx_bot</span>
+                </p>
             </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <ul class="outer-nav">
-    <li class="is-active">О нас</li>
-    <li>Услуги</li>
-    <li>Проекты</li>
-    <li>Связаться с нами</li>
-  </ul>
-</div>
+        </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script>
-  emailjs.init("BYpmQ-BijyLfjgnoQ"); 
-</script>
-<script src="assets/js/script.js"></script>
-<script src="assets/js/functions-min.js"></script>
+        <!-- Линии соединений -->
+        <svg class="connection-lines" xmlns="http://www.w3.org/2000/svg">
+            <line x1="15%" y1="25%" x2="85%" y2="75%" stroke="url(#gradient1)" stroke-width="0.5" />
+            <line x1="85%" y1="25%" x2="15%" y2="75%" stroke="url(#gradient2)" stroke-width="0.5" />
+            <defs>
+                <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#3b82f6" stop-opacity="0" />
+                    <stop offset="50%" stop-color="#06b6d4" stop-opacity="0.8" />
+                    <stop offset="100%" stop-color="#3b82f6" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#6366f1" stop-opacity="0" />
+                    <stop offset="50%" stop-color="#3b82f6" stop-opacity="0.8" />
+                    <stop offset="100%" stop-color="#6366f1" stop-opacity="0" />
+                </linearGradient>
+            </defs>
+        </svg>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+        <!-- Фон -->
+        <div class="features-bg">
+            <!-- Тонкие линии сетки -->
+            <div class="grid-pattern"></div>
+        </div>
+
+        <div class="features-container">
+            <!-- Сетка преимуществ -->
+            <div class="features-grid">
+                <!-- Преимущество 1 -->
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-glow"></div>
+                        <div class="feature-icon-box">
+                            <!-- Zap icon -->
+                            <svg class="feature-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Стабильная работа</h3>
+                    <div class="feature-line"></div>
+                </div>
+
+                <!-- Преимущество 2 -->
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-glow"></div>
+                        <div class="feature-icon-box">
+                            <!-- Gauge icon -->
+                            <svg class="feature-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m12 14 4-4"></path>
+                                <path d="M3.34 19a10 10 0 1 1 17.32 0"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Высокая скорость соединения</h3>
+                    <div class="feature-line"></div>
+                </div>
+
+                <!-- Преимущество 3 -->
+                <div class="feature-item">
+                    <div class="feature-icon-wrapper">
+                        <div class="feature-glow"></div>
+                        <div class="feature-icon-box">
+                            <!-- MessageSquare icon -->
+                            <svg class="feature-icon" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <h3 class="feature-title">Простое управление через Telegram</h3>
+                    <div class="feature-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <!-- Фон -->
+        <div class="footer-bg">
+            <!-- Тонкая светящаяся линия сверху -->
+            <div class="footer-top-line"></div>
+        </div>
+
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Логотип/Название -->
+                <div class="footer-logo">
+                    <h3 class="footer-brand">Anyx</h3>
+                    <div class="footer-divider"></div>
+                </div>
+
+                <!-- Copyright -->
+                <p class="footer-copyright">
+                    © 2026 Anyx. Разработка и дизайн
+                </p>
+
+                <!-- Дополнительная информация -->
+                <p class="footer-description">
+                    Современное сетевое решение для повседневного использования
+                </p>
+            </div>
+        </div>
+
+        <!-- Декоративные элементы -->
+        <div class="footer-glow footer-glow-left"></div>
+        <div class="footer-glow footer-glow-right"></div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
